@@ -34,7 +34,7 @@ Both must print the Conventional Commits line.
 
 - A rule is added only if the agent can't infer it, it applies to every project, and an agent had to be corrected on it twice.
 - State only what differs from harness defaults.
-- 100 lines maximum.
+- 400 lines maximum.
 - No secrets, hostnames, or agent-written memory. The repo stays private.
 - Every rule traces to a commit or an ADR.
 - Prune on a major model change or when the file hits the line budget.
