@@ -10,3 +10,7 @@
 ## Revisit when
 
 Claude Desktop or Cowork sessions are adopted. Then switch `~/.claude/CLAUDE.md` to the stub and re-run the verification in the README.
+
+## Consequences
+
+The live file is whatever the checkout has on disk. Checking out a branch without `global/AGENTS.md`, or with a different version, changes or removes the global rules for every agent immediately. The alternative of a `git worktree` pinned to `main` as the link target avoids this and was not adopted, because each edit would then need a merge before it takes effect.

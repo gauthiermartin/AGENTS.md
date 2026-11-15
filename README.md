@@ -30,6 +30,10 @@ omp -p "Without using any tools, quote verbatim the first sentence of the Git se
 
 Both must print the Conventional Commits line.
 
+## Live file warning
+
+`~/.agents/AGENTS.md` resolves through this checkout's working tree, so whichever branch is checked out here is what every agent on the machine loads. A branch that edits or deletes `global/AGENTS.md` goes live the moment you switch to it. Edit on a branch, but return to `main` before starting agent sessions. If that becomes a habit problem, point the symlink at a separate `git worktree` pinned to `main`.
+
 ## Rules for the file
 
 - A rule is added only if the agent can't infer it, it applies to every project, and an agent had to be corrected on it twice.
