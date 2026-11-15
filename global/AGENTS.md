@@ -19,7 +19,7 @@ Follow [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.
 
 # Flow
 
-Trunk-based. Every PR lands on trunk as one squash commit.
+Trunk-based. Every PR lands on trunk as one squash commit. Repo-local conventions (another merge strategy, `release/` or `hotfix/` branches) override this section.
 
 - Branch from trunk and keep it short-lived. Update a branch from trunk by rebasing onto trunk.
 - The PR title is the Conventional Commit that lands on trunk. Branch commits follow the rules in Git.
